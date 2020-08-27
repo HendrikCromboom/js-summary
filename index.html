@@ -113,6 +113,66 @@ Hoisting is the practice of declaring before initializing.
     y = 3
 </pre> First "y" is declared, this is no problem since we are dealing with a "var", when the variable is initialized after the bit of code it get's hoisted and the block of code runs as if it always knew that y = 3 from the start.
 <hr>
+
+<!--CIS' ADDITION-->
+<h3> 5.1 </h3>
+<pre> .getElementbyId</pre> Look at <strong>2.2</strong>
+<hr>
+<h5>Alternative solution</h5>
+<pre>.querySelector</pre> When used with document.querySelector("example"), it will search the entire document for a certain selector or a group of selectors. If it can't find none, it won't return a result (null). Not to be confused with .getElementbyId (which searches for ID's)
+
+<hr>
+<h3>5.2</h3>
+
+<pre>.shift</pre> this method <strong>removes the first item of an array</strong>. (which is located at position 0)
+
+<hr>
+
+<pre>.unshift</pre> <strong>adds a new item to the front of an array</strong> - without removing an item.
+
+<hr>
+
+<pre>.pop</pre> <strong>removes the last item of an array</strong>
+
+<hr>
+
+<pre>.push</pre> <strong> adds an item at the end of the array</strong>
+
+<hr>
+
+<h3>5.3</h3>
+<pre>array.length</pre> returns the length of the array (shows you how long your array is)
+<pre>array.length = 7 </pre> sets the length of an array to specified length (example given: 7)
+
+<hr>
+
+<h3>5.4</h3>
+<pre>.querySelector</pre> see <strong>5.1</strong>
+
+<hr>
+
+<pre>forEach</pre> forEach will pass each element in an array through the function, in order.
+
+<hr>
+<h3>5.5</h3>
+<pre>array.property</pre> You call upon a specific array property by adding a '.' and then writing the required property.
+<p>EXAMPLE GIVEN</p>
+<pre><em>  let people = [
+    {
+    firstname: "Garald",
+    lastname: "Freschi",
+    email: "gfreschi0@discuz.net",
+    }]</em> </pre>
+
+<p>To find the first name you'd type <strong>people.firstname</strong></p>
+
+<hr>
+
+<h3>5.6</h3>
+
+
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
