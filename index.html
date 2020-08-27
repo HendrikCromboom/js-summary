@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Global CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+</head>
+
+<p>
+<h1>JS Summary!</h1>
+<br><br><br>
+<h2>1.Base</h2>
+<br>
+<div class="card">
+    <div class="card-body">
+    <h3 class="card-title">1.1.Alert</h3>
+        <hr>
+        <div class="card-text mid">
+            <p><pre>alert()</pre> will create a pop-up. Inside the parentheses alert will accept any javascript elements and methods that can be displayed in the document.body.</p>
+            <p>Note that pop-ups are generally frowned upon by consumers, steer away unless you are an UI/UX wizard.</p>
+        </div>
+    </div>
+    <img src="IMG/1/alert.png" class="card-img-top imag">
+</div>
+<p><pre>console.log()</pre>For aspiring and experienced programmers alike console.log() is a better way to quickly test a certain element or method. It's never too early to start thinking about the abstraction of your code or application.</p>
+<hr>
+<h3>1.2.Prompt</h3>
+<hr>
+<p><pre>prompt()</pre> is basically an alert() that gives the user text to input in reaction to the alert(), this text can then be fetched as variable or string.</p>
+<hr>
+
+<h3>1.3.If</h3>
+<hr>
+<p><pre>if(){}</pre> "If" is a binary circuit/boolean selector, if the requirements or statements between the (paretheses) are true, the code in the {scope} gets executed</p>
+<hr>
+<h3>1.4.Confirm </h3>
+<hr>
+<p><pre>confirm()</pre>Confirm() will create a pop up that can be confirmed or cancelled, when confirmed it returns the variable = true, if cancled it returns the variable = false</p>
+<hr>
+<br>
+<h2>2.Maths</h2>
+<h3>2.1.Calculator</h3>
+<hr>
+<p><pre>var</pre>Variables are defined by var following the name of the variable, var new = 0 creates a variable named "new" that has the value "0". Var is global and local,can be updated, re-declared and hoisted while being initialized as undefined.</p>
+<hr>
+<p><pre>let</pre>Let has most of the functions "var" has. "Let" is local, can be updated, can NOT be re-declared and can be hoisted but won't be initialized.</p>
+<hr>
+<p><pre>const</pre> Const looks more like let then it does var. It is local, can NOT be updated, can NOT be re-declared and can be hoisted but won't be initialized.</p>
+<hr>
+<p><pre>document</pre>"document" refers to the entire HTML document</p>
+<hr>
+<p><pre>.getElementById("exampleID")</pre>When used with document.getElementById it will search the entire HTML document for tags with id="example" and fetches the entire element.</p>
+<hr>
+<p><pre>.value</pre>When used with document.getElementById() it will fetch the value of the element with the defined "id".</p>
+<hr>
+<h3>2.2.Switch</h3>
+<hr>
+<p><pre>switch()</pre>Switch will go over all of the defined "cases" and run the scope of the matching case</p>
+<h3>2.3.Loops</h3>
+<p><pre>for/while</pre>For and while are loops, the code after the loop will execute as long as the conditions are true, for (i = l; i <= r; i++) as long as i is smaller or equal to r the loop will increment and run the block</p>
+<h3>2.4.Sort</h3>
+<p><pre></pre></p>
+<h3>2.5.Factorial</h3>
+<p>Factorials are equations that take a number and multiply it's previous whole number untill the base is 1. !5= 5*4*3*2*1= 120</p>
+<h3>2.6.Modulus</h3>
+<pre>%</pre><p>The modulus will divide and leave the remaining numbers</p>
+<h2>3.Colors</h2>
+<h3>3.1.Body Style</h3>
+<pre>document.body.style</pre><p>Will select a style from the body and assign a to be given element to it</p>
+<h3>3.2. Background Color</h3>
+<pre>.backgroundColor</pre><p>"document.body.style.backgroundColor" will edit the color of the background of the body</p>
+<h3>3.3. Randomizer</h3>
+<pre>Math.random</pre><p>Will select a random number between 0 and 1. It is best to multiply it by the amount of decimals you want</p>
+<pre>Math.floor</pre><p>Drops the numbers that arent decimals</p>
+<h2>4.Dates</h2>
+<h3>4.1. new Date</h3>
+<pre>new Date</pre><p>"var date = new Date" will create a var with an element that contains the current date and time</p>
+<pre>.getHours</pre> <p>"date.getHours" will output the hours in the element of date</p>
+<h3>4.2. More Hours</h3>
+<pre>.getMinutes</pre><p>Same as .getHours but will output minutes</p>
+<h3>4.3.Even more dates</h3>
+<pre>getFullYear</pre><p>Gets full year outputted as "YYYY"</p>
+<pre>getMonth</pre><p>Outputs the month as a number from 1-12</p>
+<pre>getDate</pre><p>Outputs the day of the week as a number</p>
+<h3>4.4.Date Strings</h3>
+<pre>.toDateString</pre><p>Will output a date in words</p>
+<h3>4.5</h3>
+<pre>new Date(x,y,z)</pre><p>When setting a new date we can preset some of its values to go back or forth in time</p>
+<h2>5.Arrays</h2>
+TBC
+
+
+
+//EXTRA//
+<hr>
+On hoisting:
+Hoisting is the practice of declaring before initializing.
+<hr>
+<pre>var y;</pre>This is declaring, this should happen at the top of a scope.
+<hr>
+<pre>var y = 3</pre> This is initializing.
+<hr>
+<pre>
+    var y;
+    elem = document.getElementById("demo");
+    elem.innerHTML = x + " " + y;
+    y = 3
+</pre> First "y" is declared, this is no problem since we are dealing with a "var", when the variable is initialized after the bit of code it get's hoisted and the block of code runs as if it always knew that y = 3 from the start.
+<hr>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
