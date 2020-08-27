@@ -1,0 +1,25 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, lightblue, lightgreen)
+}
+.card{ /* article content card*/
+    color: rgba(15,15,15,1);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.imag{
+    height: 25%;
+    width: 25%;
+}
+.mid{
+    height: 50%;
+    width: 80%;
+}
